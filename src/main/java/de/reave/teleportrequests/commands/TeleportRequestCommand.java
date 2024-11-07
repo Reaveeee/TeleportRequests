@@ -45,7 +45,7 @@ public class TeleportRequestCommand implements CommandExecutor {
         DataManager.lastRequest.put(receiver.getName(), player.getName());
         TextComponent acceptText = new TextComponent(PluginText(ColoredText("  ACCEPT", ChatColor.GREEN)));
         acceptText.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(ChatColor.GREEN + "Click to accept the request").create()));
-        acceptText.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/accept"));
+        acceptText.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/teleportaccept"));
 
         receiver.sendMessage(PluginText(ColoredText("//------------------------------------\\\\", ChatColor.GRAY)));
         receiver.sendMessage(PluginText(ColoredText("  " + sender.getName(), ChatColor.LIGHT_PURPLE) + ColoredText(" wants to teleport to your location", ChatColor.GRAY)));

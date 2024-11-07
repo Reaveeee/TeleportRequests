@@ -24,6 +24,10 @@ public class TeleportAcceptCommand implements CommandExecutor {
             sender.sendMessage(PluginText(ColoredText("Error: This player isn't online", ChatColor.RED)));
             return true;
         }
+        if(args.length > 0){
+            sender.sendMessage(PluginText(ColoredText("Error: There are no arguments for this command", ChatColor.RED)));
+            return true;
+        }
 
         //Execution
         Player player = (Player) sender;
