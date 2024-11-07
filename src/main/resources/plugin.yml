@@ -1,0 +1,12 @@
+name: TeleportRequests
+version: '${project.version}'
+main: de.reave.teleportrequests.TeleportRequest
+api-version: '1.21'
+
+commands:
+  teleportrequest:
+    description: Requests another player to teleport to them
+    aliases: tpr
+  teleportaccept:
+    description: Accept the latest teleport request
+    aliases: tpa
